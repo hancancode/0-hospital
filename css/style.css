@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (max-width: 900px){
+  html{ font-size:15px; }
+  ul{display: flex; justify-content: space-between;}
+  footer{font-size: 16px}
+}
+
+@media screen and (max-width: 600px){
+  html{ font-size:13.5px; }
+  h2{justify-content: space-between;}
+  footer{font-size: 16px}
+}
+
+html,h1, h2, h3, h5, section, body, header, nav, p,a, button, footer{margin: 0; padding: 0;font-family: 'NanumSquareRound';}
+html{ cursor: url(./img/cursor.png) 0 0, auto; min-width: 1px; transition: .5s }
+h1{padding: 30px; line-height: 1.6; word-break: keep-all;}
+nav{ height: 0px; padding-right: 0px; padding-top: 0px; background: }
+header{position: relative; }
+body{margin: 0; padding: 0; scroll-behavior: smooth; height: 100%;}
+button{}
+header{text-align: center; padding: 6.25rem 0;}
+section{display: inline;}
+h1{line-height: 1.5; font-size: 2rem;}
+h2{padding: 2rem 0px; font-size: 2rem;}
+h2::before {content: "";}
+h3{text-align: right;color: black;}
+h5{width: 35px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;}
+footer{border-top: 0.5px solid red;}
+
+.bg{width: 100%; height: 100%; background: black; position: absolute; z-index: -3;}
+.bg2{width: 100%; height: 100%; z-index: 1; background: white; backdrop-filter: blur(4px);}
+.zero{ width: 25rem; transform: translate3D(0px, 0px, -100px) rotateY(0deg); animation: roy 0.5s infinite cubic-bezier(0, 2.01, 1, 1.39) alternate;}
+.container{perspective: 500px; }
+@keyframes roy{
+  to{
+  transform: translate3D(0px, 0px, 30px) rotateY(0deg);  
+  }
+
+}
+.info{padding-right: 1.56rem; }
+
+.more {display:block; font-size:1rem; color:#fff; background:#AB0000; line-height:1.5rem; width:33rem; opacity:0; transition:0.5s all; float: right; text-align: left; padding: 10px; word-break: keep-all; margin-right: 0.78rem; position: relative; top: 3px; border-radius: 3px}
+.infographic{width: 4.6875rem;}
+.info:hover .more{opacity: 1; margin-right:5px}
+.box{height: 100px;}
+.flexfooter1{width: 47.5%}
+.flexfooter2{width: 30%; cursor: pointer;}
+.hover:hover{color:red}
+.footerdot{padding-left: 1.25rem;}
+.bold{font-weight: bold}
+
+.video{position: fixed; top: 0; left: 0; width: 100%; z-index: -2;backdrop-filter: blur(4px);}
+.block{display: block;}
+.inline{display: inline;}
+.emoji-container{width:100%; padding: 1.875rem 0px 0px 0px; display: flex; justify-content: flex-start; gap: 2rem 2rem; text-align: center; flex-wrap: wrap;}
+.emoji-section{width: 9rem; display: flex; flex-direction: column; align-items: center;}
+.emoji-size{font-size: 6rem;}
+.emoji-name{font-size: 1.25rem;  font-weight: 700; padding-top: 10px; width: 120px; word-break: keep-all;font-family: 'NanumSquareRound'; line-height: 1.8rem;}
+.emoji-name2{font-size: 1rem; font-weight: 500; color: darkgray; padding-top: 5px;font-family: 'NanumSquareRound'; word-break: keep-all;}
+.subtitle{padding: 0px 1.25rem 0px 0px; font-weight: 900;}
+.explanation{font-size: 1rem;  color: darkgray; padding-left: 0px; }
+.menu{width: ; float: right; text-decoration: underline;}
+.menu li{list-style-type: none;}
+.menu li a{display:block; padding: 10px 20px; text-decoration: none; color: black;}
+.menu li a:hover{background: #FED7D7; color: black; border-radius: 3px;}
+.blur{backdrop-filter: blur(10px); /* 배경 블러 효과 */
+    background-color: rgba(255, 255, 255, 0.5); /* 투명도를 조절하여 블러 효과를 부각시킴 */}
+.white{color: white;background-color: transparent;}
+.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* 다른 요소 위에 표시되도록 z-index 설정 */
+    background-color: white; /* 필요에 따라 배경색 설정 */}
+
+.fade{animation: fadein 1s cubic-bezier(0, 0, 0, 1) forwards; position: relative; text-align: left;  }
+@keyframes fadein{
+  from{top:30px; opacity: 0}
+  to{top: 0; opacity: 1}
+
+}
+.fade2{animation: fadein2 1s cubic-bezier(0, 0, 0, 1) forwards; position: relative; text-align: left;}
+@keyframes fadein2{
+  from{top:-30px; opacity: 0}
+  to{top: 0; opacity: 1}
+}
+.noto-color-emoji-regular {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.noto-sans-kr {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 4rem;
+  animation: nn 1s infinite alternate cubic-bezier(0.84, 0.1, 1, 1);
+}
+@keyframes nn {
+  from { font-variation-settings: "wght" 300; }
+  to { font-variation-settings: "wght" 900; }
+}
+
+.flex{display: flex; justify-content: space-between;}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #ffffff;
+  color: #000000;
+  cursor: url(./img/cursor2.png)0 0,auto;
+  padding: 2rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  border-top: 1px solid red;
+  font-size: ;
+
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #FED7D7;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 0 0 2rem;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  z-index: 10;
+  transition: 0.5s ease-out; 
+}
+.collapsible:after {
+  content: ''; /* arrow down */
+  font-size: 64px;
+  color: black;
+  float: right;
+  margin-left: 0px;
+}
+
+.active:after {
+  content: ""; /* arrow up */
+  color: black;
+}
+
+.wrap0{width: 500px; height: 500px; background: #ddd; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
